@@ -1,21 +1,21 @@
 [{
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
+    "name": "Coffee Burger", 
+    "kCal": 1200, 
+    "url": "/img/coffeburger.png",
     "lactose": false, 
-    "gluten": false
+    "gluten": true
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Tea Burger", 
+    "kCal": 1000, 
+    "url": "/img/teaburger.jpg",
+    "lactose": true, 
+    "gluten": true
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
+    "name": "Candy Burger", 
+    "kCal": 1900, 
+    "url": "/img/candyburger.jpg",
     "lactose": false, 
     "gluten": false
 }]
