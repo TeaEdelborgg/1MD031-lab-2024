@@ -1,8 +1,8 @@
 <template>
   <div>
-    <header>
-            <img id="headerImg" src="/img/bar.jpeg">
-            <h1 id="headerText">Välkommen till BurgerOnline</h1>
+    <header id="burgerHeader">
+      <img id="headerImg" src="/img/bar.jpeg">
+      <h1 id="headerText">Välkommen till BurgerOnline</h1>
     </header>   
     <main>
         <section id="burger">
@@ -103,6 +103,7 @@ const candyBurger = new MenuItem("Candy Burger",'/img/candyburger.jpg',1900,fals
 const coffeBurger=menu[0]
 const teaBurger=menu[1]
 const candyBurger=menu[2]
+
 export default {
   name: 'HomeView',
   components: {
@@ -134,7 +135,7 @@ export default {
       
     },
     addToOrder: function (event){
-      console.log("hej")
+      console.log("lagt till burgare")
       this.orderedBurgers[event.name]=event.amount
     },
     setLocation: function(event){
@@ -182,10 +183,6 @@ export default {
     font-family:'Times New Roman', Times, serif;
   }
 
-  p {
-    color: red;
-  }
-
   h1 {
     font-family: 'Agbalumo';
     font-size: 32pt;
@@ -193,7 +190,7 @@ export default {
   }
   
   main {
-    background-color: bisque;
+    background-color: white;
   }
 
   /* nav ul li {
@@ -209,25 +206,26 @@ export default {
     overflow: hidden;
     width: 100%;
     height: 200px;
-    padding: 5px;
   }
 
   #headerImg{
-    opacity: 0.5;
+    opacity: 0.60;
     height:auto;
     width:100%;
+    position:relative;
   }
   #headerText{
-    margin-left:5px;
     position:absolute;
-    margin-top:-450px;
+    margin-top:-600px;
+    text-align: center;
+    width: 100%;
   }
 
-  header h1 {
+  /*header h1 {
     width:40rem;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
-  }
+  }*/
 
   nav ul {
     display: grid;
@@ -258,13 +256,15 @@ export default {
   #burger {
     background-color: black;
     color:white;
-    border: 3px dashed;
+    border: 5px dashed;
     border-color:white;
   }
 
   #information{
-    border: 3px dashed;
+    border: 5px dashed;
     border-color:black;
+    color:black;
+    background-color: #e3c3fa;
   }
 
   button:hover{
@@ -286,7 +286,10 @@ export default {
   .wrapper{
     display: grid;
     grid-gap: 100px;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 30% 30% 30%;
+  }
+  #burgerHeader{
+    position: relative;
   }
 
     
