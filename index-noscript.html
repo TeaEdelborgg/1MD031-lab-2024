@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Hamburgare</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+    </head>
+    <body>
+        <header>
+            <img id="headerImg" src="../img/bar.jpg">
+            <h1 id="headerText">Välkommen till BurgerOnline</h1>
+        </header>
+        
+        <main>
+            <section id="burger">
+                <h2>Select burger</h2>
+                <p>This is where you execute burger selection</p>
+                <div class="wrapper">
+                    <div class="burgers">
+                        <h3>Coffee burger</h3>
+                        <img src="../img/coffe-burger.png" style="width:150px">
+                        <dl>
+                            <dt>Taste</dt>
+                            <dd>Coffee</dd>
+                            <dt>Contains</dt>
+                            <dd class="bold">Gluten</dd>
+                            <dd class="bold">Lactose</dd>
+                        </dl>  
+                    </div>
+                    <div class="burgers">
+                        <h3>Tea burger</h3>
+                        <img src="../img/tea-burger.jpg" style="width:150px">
+                        <dl>
+                            <dt>Taste</dt>
+                            <dd>Tea</dd>
+                            <dt>Contains</dt>
+                            <dd class="bold">Gluten</dd>
+                            <dd>Wheat</dd>
+                        </dl>
+                    </div>
+                    <div class="burgers">
+                        <h3>Candy burger</h3>
+                        <img src="../img/candy-burger.jpg" style="width:150px">
+                        <dl>
+                            <dt>Taste</dt>
+                            <dd>Strawberry</dd>
+                            <dt>Contains</dt>
+                            <dd>Suger</dd>
+                            <dd>Color</dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+            <section id="information">
+                <h2>Costumer information</h2>
+                <p>This is were you provide neccessary information</p>
+                <h3>Customer information</h3>
+                <form>
+                    <p>
+                        <label for="fullname">Full name</label><br>
+                        <input type="text" id="fullname" name="fn" required="required" placeholder="Full name">
+                    </p>
+                    <p>
+                        <label for="email">E-mail adress</label><br>
+                        <input type="email" id="email" name="em" required="required" placeholder="E-mail adress">
+                    </p>
+                    <p>
+                        <label for="street">Street name</label><br>
+                        <input type="text" id="street" name="sn" required="required" placeholder="Street name">
+                    </p>
+                    <p>
+                        <label for="house">House number</label><br>
+                        <input type="number" id="house" name="hn" required="required" placeholder="House number">
+                    </p>
+                    <p>
+                        <label for="payment">Payment method</label><br>
+                        <select id="payment" name="pm">
+                            <option>Card</option>
+                            <option>Klarna</option>
+                            <option>Swish</option>
+                            <option>Gift card</option>
+                        </select>                
+                    </p>
+                    <p>
+                        <label for="radio">Gender</label> <br>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        <br>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <br>
+                        <input type="radio" id="none" name="gender" value="None" checked="checked">
+                        <label for="none">Do not wish to provide</label>
+                        <br>
+                    </p>
+                </form>
+            </section>
+            <button type="submit" id="sendbutton">
+                <img src="../img/send-button.jpeg" style="width:20px">
+                Place my order!
+            </button>
+        </main>
+        <hr>
+        <footer>
+            <p>&copy; 2003 Teas goda hamburgare Inc.</p>
+        </footer>
+    </body>
+</html>
